@@ -9,11 +9,16 @@
 
 body{
     min-height: 100vh;
-    display: flex;
+    width: fit-content;
+    
     justify-content: center;
     align-items: center;
     background-image: url(Images/1540016.webp);
     
+}
+.background{
+    width: auto;
+    height: auto;
 }
 .flex-container{
     width: 100%;

@@ -12,8 +12,8 @@ body{
     align-items: center;
     justify-content: center;
     background: #06283D;
+    background-image: url(Images/bg2.jpg);
 }
-
 .container{
     position: relative;
     width: 400px;

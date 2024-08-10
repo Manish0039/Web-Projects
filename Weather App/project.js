@@ -52,7 +52,7 @@ search.addEventListener('click', () => {
                     break;
 
                 case 'Mist':
-                    image.src = "Images/mist.png";
+                    image.src = "./Images/mist.png";
                     break;
 
                 default:

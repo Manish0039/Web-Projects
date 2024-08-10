@@ -1,88 +1,105 @@
 *{
-    
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
     outline: none;
-    font-family:Arial;
-    border: none;
+    box-sizing: border-box;
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    background-image: url(Images/bg2.jpg);
-    justify-content: center;
     align-items: center;
-    
+    justify-content: center;
+    background: #06283D;
 }
 
 .container{
+    position: relative;
     width: 400px;
-    height: min-content;
-    justify-content: center;
-    background-color: white;
-    background:linear-gradient(rgb(148, 177, 188),rgb(94, 92, 101));
-    align-items: center;
-    padding: 38px;
-    border-radius: 20px;
-   
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
 }
+
 .search-box{
-    width:100%;
+    width: 100%;
     height: min-content;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
 
-}
 .search-box input{
-    width: 85%;
-    font-size: 20px;
-    text-transform: capitalize;
-    color: black;
-    background-color: azure;
-    padding: 12px 16px;
-    border-radius: 14px;
+    color: #06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
 }
+
 .search-box input::placeholder{
-    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
 }
+
 .search-box button{
-    width: 13%;
-    height: 45px;
-    border-radius: 10px;
-    background-color: azure;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #06283D;
+    background: #dff6ff;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
 }
+
 .search-box button:hover{
     color: #fff;
-    background-color: cornflowerblue;
+    background: #06283D;
 }
-.weather-body img{
-    width: 60%;
-    
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
 }
+
 .weather-box{
-    margin-block: 20px;
     text-align: center;
 }
 
-.weather-box .temperature{
-    font-size: 40px;
-    font-weight: 800;
-    position: relative;
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
 }
 
-.weather-box .temperature sup{
-    font-size: 20px;
+.weather-box .temperature{
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
     position: absolute;
-    font-weight: 600;
+    margin-left: 4px;
+    font-size: 1.5rem;
 }
 
 .weather-box .description{
-    font-size: 20px;
-    font-weight: 700;
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
     text-transform: capitalize;
 }
 
@@ -93,51 +110,75 @@ body{
     margin-top: 30px;
 }
 
-.humidity, .wind{
+.weather-details .humidity, .weather-details .wind{
     display: flex;
     align-items: center;
+    width: 50%;
+    height: 100px;
 }
 
-.humidity{
-    margin-left: 20px;
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
 }
 
-.wind{
-    margin-right: 20px;
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
 }
 
 .weather-details i{
-    font-size: 36px;
+    color: #06283D;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
 }
 
-.weather-details .text{
-    margin-left: 10px;
-    font-size: 16px;
+.weather-details span{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
 }
 
-.text span{
-    font-size: 20px;
-    font-weight: 700;
+.weather-details p{
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.location-not-found{
-    margin-top: 20px;
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-.location-not-found h1{
-    font-size: 20px;
-    color: #6b6b6b;
-    margin-block-end: 15px;
-}
-.location-not-found img{
-    width: 80%;
+.not-found img{
+    width: 70%;
 }
 
+.not-found p{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
 
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
 
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
 
-
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

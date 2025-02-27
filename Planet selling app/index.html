@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet shop</title>
+    <link rel="icon" href="/Images/planet_favicon.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        body{
+            background-color: gray;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 3px solid white;
+            background-color: rgb(173, 63, 173);
+            overflow: hidden;
+        }
+
+        
+        nav ul{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(173, 63, 173);
+            border-radius: 10px;
+            list-style-type: none;
+            
+        }
+
+        nav ul li{
+            float:left;
+        }
+
+        nav ul li a{
+            display: block;
+            color: rgb(8, 4, 4);
+            background-color: rgb(250, 249, 250);
+            font-weight: bold;
+            text-align: center;
+            padding: 5px 5px;
+            margin: 5px;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 10px;
+            
+        }
+        nav ul li a:hover{
+    
+        
+            font-weight: bold;
+            text-decoration-line:underline;
+        
+        }
+        nav ul li a:active{
+            background-color: grey;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        .signup{
+            background-color: gray;
+            color: white;
+        }
+        .signup:hover{
+            color: rgb(8, 4, 4);
+            background-color: rgb(250, 249, 250);
+        }
+        .content-left{
+            display: flex;
+            flex-direction: column;
+            width: 310px;
+            text-align: justify;
+            border: 3px solid rgb(1, 4, 1);
+            color: white;
+            border-radius: 10px;
+
+        }
+        div button{
+            background-color: rgb(216, 216, 231);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div><img src="/Images/planet_favicon.png" alt="Logo" height="auto" width="100px"></div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Buy Now</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="" class="signup">Sign Up</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <br>
+        <div class="content-left">
+            <h2>Mercury</h2>
+            <img src="/Images/mercury_planet.jpg" alt="Mercury planet" height="200px" width="290px">
+            <p>Mercury is the smallest planet in our solar system and the nearest to the Sun. Mercury is only slightly larger than Earth's Moon. It's the fastest planet, zipping around the Sun every 88 Earth days. Mercury is named for the swiftest of the ancient Roman gods.</p>
+            <br>
+            <button type="button">Buy now</button>
+
+        </div>
+
+    </main>
+</body>
+</html>

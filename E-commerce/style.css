@@ -1,12 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-body{
-    background-color: rgb(230, 227, 223);
-    font-weight: bold;
-}
+
 
 #header{
     background-color: aliceblue;
@@ -20,22 +19,110 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    overflow: auto;
 }
 .header-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.header-list-nav ul li{
-    list-style-type: none;
-    padding: 0;
-    position: relative;
-}
-.header-list-nav ul  a{
-    text-decoration: none;
-    
 
 }
+.header-list- nav ul{
+    list-style-type:none;
+}
+.header-list-nav ul li{
+    display: flex;
+    float: left;
+    margin: 20px;
+   
+}
+.header-list-nav ul li a{
+text-decoration: none;
+color: black;
+
+}
+.header-list-nav ul li a:hover{
+    color: rgb(51, 180, 131);
+    text-decoration: underline;
+
+}
+.header-list-nav ul li a:focus{
+    color: rgb(51, 180, 131);
+    text-decoration: underline;
+}
+
+.header-list-icon{
+    margin: 20px;
+
+}
+.header-list-icon:hover{
+    color: rgb(51, 180, 131);
+}
+#home{
+    background-image: url(images/hero4.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 80px;
+    margin: 0;
+}
+#home h3{
+    color: rgb(231, 90, 90);
+    font-weight: bold;
+}
+#home h2{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+#home h1{
+    color: rgb(51, 180, 131);
+    font-weight: bold;
+    font-size:xx-large;
+    font-size: 50px;
+}
+#home button{
+    color: rgb(51, 180, 131);
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 1000;
+    background-color: rgb(239, 229, 188);
+    cursor:pointer;
+}
+#feature{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+
+}
+#feature .f-box{
+    border: 1px solid rgb(161, 155, 155);
+    box-shadow: 2px ;
+    margin: 10px;
+    border-radius: 10px;
+    padding:  10px;
+    width: 300px;
+
+}
+.f-box h6{
+    text-align: center;
+    padding: 10px;
+    border: 2px soild black;
+
+
+}
+
+
+
+
 
 
 

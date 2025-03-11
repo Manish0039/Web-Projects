@@ -62,3 +62,14 @@ section{
     
 
 }
+footer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+footer a:hover{
+    color: rgb(7, 26, 19);
+}
+footer a:visited{
+    color: green;
+}

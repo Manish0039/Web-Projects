@@ -50,7 +50,7 @@ section{
 .content p{
     font-size: 20px;
     font-weight: 400;
-    text-wrap: wrap;
+    text-align: justify;
 }
 .bio  {
     margin: 0px 0 0 -265px;

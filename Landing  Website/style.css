@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300px;
+    
+}
+.one{
+    background-image: url(/Images/developer.png);
+    min-height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+    
+}
+.one_text {
+    color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-top: 40px;
+}
+.lg_text{
+    font-size: 50px;
+}
+.text{
+    background-color: black;
+}
+.text pre{
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    
+}
+.text span{
+    font-size: 60px;
+}
+.work{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.work  div{
+    height: 270px;
+    width: 200px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgb(126, 110, 110);
+}
+.web h4{
+    margin-top: 20px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.web p{
+    margin: 10px;
+    font-size: 15px;
+
+}
+
+.app h4{
+    margin-top: 20px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.app p{
+    margin: 10px;
+    font-size: 15px;
+
+}
+
+.ui h4{
+    margin-top: 20px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.ui p{
+    margin: 10px;
+    font-size: 15px;
+
+}
+.work div:hover{
+    transform: scale(1.01);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    overflow: hidden;
+    
+}
+
+
+.contact{
+    background-color: rgb(57, 116, 57);
+
+}
+
+.about{
+    background-color: brown;
+}
+.contact h2{
+    padding: 15px;
+}
+.contact p{
+    padding: 10px;
+    
+}
+
+
+
+
+
+.about h2{
+    padding: 15px;
+}
+.about p{
+    padding: 10px;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+
+    padding: 10px;
+
+}
+footer h5{
+    margin: o auto;
+    width: 900px;
+    padding-left: 40%;
+}

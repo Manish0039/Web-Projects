@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html ,body{
+    line-height: 1.4;
+    font-weight:  400;
+}
+header{
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+nav .logo{
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+   padding-bottom: 30px;
+    box-shadow: 0 1px 1px gray;
+}
+
+.container .flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width:600px){
+
+    
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+
+
+
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 95px;
+    border: 1px solid black;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.social ul{
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    list-style-type: none;
+}
+.social ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;

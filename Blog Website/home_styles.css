@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    font-weight: 400;
+    line-height: 1.4;
+    
+}
+header{
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(86, 73, 73);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    
+}
+nav ul li a{
+    
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.2 ease-in;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+    transition: 0.2 ease-in;
+    
+}
+nav .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin
+    
+    
+
+}
+.container .text{
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 2rem;
+        font-weight: 200;
+    }
+}
+ .container .hero-img{
+    border-radius: 40px;
+    height: auto;
+   
+    
+    
+}
+
+.card1 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+    
+}
+.container .long{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 53px 20px;
+    box-shadow: -1px 1px 2px gray;
+    
+}
+.container .flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 25px;
+overflow: hidden;
+
+}
+
+.long  h1{
+    font-size: bolder;
+}
+.card2 .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box1 , .box2 , .box3{
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.box1 .flex1{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+ .flex1L{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box2 .flex2{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+ .flex2L{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box3 .flex3{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+ .flex3L{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+    
+}
+ .big{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 155px 10px;
+    box-shadow: -1px 1px 2px gray;
+    
+    
+}
+.big h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.container .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    overflow: hidden;
+    
+    }
+    
+.big  h1{
+        font-size: bolder;
+    }
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 95px;
+    border: 1px solid black;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.social ul{
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    list-style-type: none;
+}
+.social ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+.home-button{
+    text-align: end;
+    display: block;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    background-color: rgb(97, 53, 148);
+    font-weight: bold;
+    font-size: 1rem;
+    
+}
+
+@media  (max-width:600px) {
+    nav ul{
+        flex-wrap: wrap;
+    }
+    .hero .container{
+        flex-wrap: wrap;
+    }
+    .card .container{
+        flex-wrap: wrap;
+    }
+    .container .long{
+        flex-wrap: wrap;
+    }
+    .container.flex{
+        flex-wrap:wrap ;
+    }
+    .home{
+        flex-wrap: wrap;
+    }
+    .last .container{
+        flex-wrap: wrap;
+    }
+    .container .flex{
+        flex-wrap: wrap;
+    }
+    .container .hero-img {
+        width: 100%;
+
+    }
+    .text h1{
+        font-size: 1rem;
+    }
+}

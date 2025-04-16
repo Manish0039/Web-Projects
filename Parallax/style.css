@@ -1,0 +1,114 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: medium;
+    font-family:Verdana,  Tahoma, sans-serif;
+    line-height: 1.8em;
+    font-weight: 400;
+    background-color: #666;
+    color: WHITE;
+
+
+}
+.one_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    background-image: url(/Images/image1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bg_text{
+    display: flex;
+    justify-content: center;
+    background-color: #666;
+    color: white;
+    padding: 20px;
+    max-width: 30rem;
+    font-size: 40px;
+    overflow: hidden;
+    
+}
+.section_one h1{
+    display: flex;
+    justify-content: center;
+}
+
+.section_one P{
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.second_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    background-image: url(/Images/image2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bg_text_2{
+    color: white;
+    padding: 20px;
+    max-width: 30rem;
+    font-size: 40px;
+    overflow: hidden;
+
+}
+.section_two h1{
+    display: flex;
+    justify-content: center;
+}
+.section_two p{
+    padding: 0 10%;
+    margin: 0 auto;
+    text-align:center;
+}
+
+
+
+.third_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    background-image: url(/Images/image3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.bg_text_third{
+    color: white;
+    padding: 20px;
+    max-width: 30rem;
+    font-size: 40px;
+    overflow: hidden;
+
+}
+.section_third h1{
+    display: flex;
+    justify-content: center;
+}
+.section_third p{
+    padding: 0 10%;
+    margin: 0 auto;
+    text-align:center;
+}
+
